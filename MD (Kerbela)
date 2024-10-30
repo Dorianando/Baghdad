@@ -1,0 +1,66 @@
+n = int(input("overall distance (km): "))
+s = int(input("distance driven so far (km): "))
+
+
+if s > 0:
+    days = n // s
+    if n % s != 0:
+        days += 1
+   
+
+    
+print(f"days needed to drive {n} km: {days}")
+
+
+hours = int(input("Enter hours: "))
+minutes = int(input("Enter minutes: "))
+seconds = int(input("Enter seconds: "))
+
+
+total_seconds = hours * 3600 + minutes * 60 + seconds
+
+
+print(f"Total time in seconds: {total_seconds}")
+
+
+
+peanut_smile = input("Ievadiet, vai Peanut smaida (True/False): ")
+coco_smile = input("Ievadiet, vai Coco smaida (True/False): ")
+
+
+peanut_smile = peanut_smile == "True"
+coco_smile = coco_smile == "True"
+
+
+uztraucas = False
+
+
+if (peanut_smile and coco_smile) or (not peanut_smile and not coco_smile):
+    neuztraucas = True
+    uztraucas = False
+    
+if (peanut_smile and not coco_smile) :
+        uztraucas = True
+        neuztraucas = False
+
+
+print(uztraucas)
+print(neuztraucas)
+
+Atzime = int(input("Ievadiet Atzimi:"))
+
+if 90 <= Atzime <= 100:
+    print("Atzime: A")
+if 80 <= Atzime < 90:
+    print("Atzime: B")
+if 70 <= Atzime < 80:
+    print("Atzime: C")
+if 60 <= Atzime < 70:
+    print("Atzime: D")
+if 50 <= Atzime < 60:
+    print("Atzime: E")
+if 0 <= Atzime < 50:
+    print("Atzime: F")
+if 0< Atzime > 100:
+    print("Nepareiza atzime! Ievadiet skaitli no 0 līdz 100.")
+    
