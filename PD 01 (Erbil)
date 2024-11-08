@@ -1,0 +1,149 @@
+try:
+    
+   x = int(input ('Enter x:'))
+
+   y = int(input ('Enter y:'))
+   
+except ValueError:
+      print('x or y = int')
+                  
+x1 = (x + y)
+print (x1)
+x2 = (x - y)
+print (x2)
+x3 = (x * y)
+print (x3)
+x4 = (x / y)
+print (x4)
+
+
+
+try:
+    x = int(input('Enter x:'))
+    
+    y = int(input('Enter y:'))
+    
+except ValueError:
+                  print ('x or y = int')
+
+
+    
+x18 = (4 * x) ** (y + 3) + (15 * y)
+    
+print (x18) 
+
+x16 = (5 * y) ** (x) - (144 * x) + (2) / (x + y) ** (2)
+print (x16)
+
+x10 = (2 + x) - (2 * x * y) / (y) / (x + y)
+print (x10)
+
+
+try:
+    a = int(input('Enter a:'))
+except ValueError:
+                 print ('a = int')
+                 
+if a < 0:
+    print ('Skaitlis ir negativs')
+if a == 0:
+    print ('Skaitlis ir nulle')
+if a > 0:
+    print ('Skaitlis ir pozitivs')    
+    
+    
+    
+    Atzime = int(input("Ievadiet Atzimi:"))
+
+if 9 <= Atzime <= 10:
+    print("Atzime: A")
+if 7 <= Atzime < 8:
+    print("Atzime: B")
+if 6 <= Atzime < 7:
+    print("Atzime: C")
+if 5 <= Atzime < 6:
+    print("Atzime: D")
+if 4 <= Atzime < 5:
+    print("Atzime: E")
+if 0 <= Atzime < 4:
+    print("Atzime: F")
+if 0< Atzime > 10:
+    print("Nepareiza atzime! Ievadiet skaitli no 0 līdz 10.")
+    
+    
+Z = int(input('Enter Z:'))
+print(Z)try:
+    
+   x = int(input ('Enter x:'))
+
+   y = int(input ('Enter y:'))
+   
+except ValueError:
+      print('x or y = int')
+                  
+x1 = (x + y)
+print (x1)
+x2 = (x - y)
+print (x2)
+x3 = (x * y)
+print (x3)
+x4 = (x / y)
+print (x4)
+
+
+
+try:
+    x = int(input('Enter x:'))
+    
+    y = int(input('Enter y:'))
+    
+except ValueError:
+                  print ('x or y = int')
+
+
+    
+x18 = (4 * x) ** (y + 3) + (15 * y)
+    
+print (x18) 
+
+x16 = (5 * y) ** (x) - (144 * x) + (2) / (x + y) ** (2)
+print (x16)
+
+x10 = (2 + x) - (2 * x * y) / (y) / (x + y)
+print (x10)
+
+
+try:
+    a = int(input('Enter a:'))
+except ValueError:
+                 print ('a = int')
+                 
+if a < 0:
+    print ('Skaitlis ir negativs')
+if a == 0:
+    print ('Skaitlis ir nulle')
+if a > 0:
+    print ('Skaitlis ir pozitivs')    
+    
+    
+    
+    Atzime = int(input("Ievadiet Atzimi:"))
+
+if 9 <= Atzime <= 10:
+    print("Atzime: A")
+if 7 <= Atzime < 8:
+    print("Atzime: B")
+if 6 <= Atzime < 7:
+    print("Atzime: C")
+if 5 <= Atzime < 6:
+    print("Atzime: D")
+if 4 <= Atzime < 5:
+    print("Atzime: E")
+if 0 <= Atzime < 4:
+    print("Atzime: F")
+if 0< Atzime > 10:
+    print("Nepareiza atzime! Ievadiet skaitli no 0 līdz 10.")
+    
+    
+Z = int(input('Enter Z:'))
+print(Z)
