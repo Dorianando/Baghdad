@@ -1,0 +1,62 @@
+#uzdevums1
+n = int(input("Ievadi skaitli n: "))
+
+summa = 0
+
+for i in range(1, n + 1):
+    summa += i
+
+print("Skaitļu summa no 1 līdz n ir:", summa)
+
+#uzdevums2
+
+n = int(input("Ievadi skaitli n: "))
+
+faktorials = 1
+
+for i in range(1, n + 1):
+    faktorials *= i
+
+print("Faktorials no 1 līdz n ir:", faktorials)
+
+#uzdevums3
+
+n = int(input("Ievadiet skaitli n: "))
+
+for i in range(n, -1, -1):
+        print(i)
+
+#uzdevums4 un 5
+
+height = int(input("Height of triangle: "))
+
+for i in range (height, 0, -1):
+    print ('$' * i)
+    
+#uzdevums6
+
+import random
+
+min_skaitlis = 0
+max_skaitlis = 100
+
+
+izveles_skaitlis = random.randint(min_skaitlis, max_skaitlis)
+
+print ("Uzminejiet skaitli no 0 lidz 100")
+
+uzminets = False
+
+while not uzminets:
+    
+    skaitlis = int(input("Ievadiet skaitli:"))
+    
+    if skaitlis < izveles_skaitlis:
+        print("Lielaks")
+        
+    if skaitlis > izveles_skaitlis:
+        print("Mazaks")
+        
+    if skaitlis == izveles_skaitlis:
+        print ("Uzminets!")
+        break
