@@ -1,0 +1,21 @@
+
+S = []
+SI = [1, 2, 3, 4, 5]
+print (S)
+print (SI)
+
+SI[0] = 11
+print(SI)
+
+SI.pop()
+print (SI)
+
+
+A1 = []
+for i in range(5):
+    x = int(input("Enter x:"))
+    A1.append(x)
+    
+A1.pop()
+A1.pop(0)
+print(A1)
