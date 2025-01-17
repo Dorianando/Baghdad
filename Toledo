@@ -1,0 +1,17 @@
+marks={
+       10: "Perfect", 
+       9: "Amazing", 
+       8: "Great", 
+       7: "Very good", 
+       6: "Good", 
+       5: "Average", 
+       4: "Not great, not terrible", 
+       3: "Close enough", 
+       2: "Bad", 
+       1: "Very bad",
+}
+x=int(input("Enter mark from 1 til 10:"))
+if 1<=x<=10:
+    print (f"Mark: {marks[x]}")
+else: 
+    print("Enter an number from 1 to 10, is it that fucking hard?")
