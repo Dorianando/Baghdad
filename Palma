@@ -1,0 +1,38 @@
+class Person:
+    def __init__(self,name, surname, age, height):
+        self.name = name
+        self.age = age
+        self.surname = surname
+        self.height = height
+        
+    def getName(self) -> str:
+        return self.name
+    
+    def getAge(self) -> str:
+        return self.age
+    
+    def getSurname(self) -> str:
+        return self.surname
+    
+    def getHeight(self) -> float:
+        return self.height
+
+    def greet(self):
+        print (f"Hello {self.name}")
+        print(f"I am {self.age} y.o")
+        
+    def __str__(self):
+        return f"{self.name} {self.surname} {self.age} {self.height}"
+        
+person1 = Person("Andrejs", "Smirnovs", 32, 185)
+person2 = Person("Yekaterina", "Smirnova", 27, 185)
+person3 = Person("Davids", "Smirnovs", 15, 185)
+
+personlist = [person1, person2, person3]
+
+for i in range (0, len(personlist)):
+    if personlist[i].getAge() >=18:
+        print("Go on mate, get blackout drunk")
+else:
+    print("Not for kids mate, go home and grow some hairs on yout tschest")
+    
