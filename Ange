@@ -1,0 +1,31 @@
+from Malmo import Block
+
+class Inventory:
+    def __init__(self, size):
+        self.Inventory = []
+        self.Maxsize = size
+        
+    def AddBlock (self, block):
+        if(len(self.Inventory) <= self.Maxsize):
+            self.Inventory.append(block)
+        else:
+            print("Inventory is full")
+            
+    def OutputInventory(self):
+        for item in self.Inventory:
+            print(item)
+    
+    def __str__(self):
+        return f"{self.Inventory}"
+
+row1 = Inventory(9)
+
+Block1 = Block("Block of Iron", "Iron.png", True)
+Block2 = Block("Block of Aluminium", "Aluminium.png", True)
+Block3 = Block("Block of Tungsten", "Tungsten.png", True)
+
+row1.AddBlock(Block1)
+row1.AddBlock(Block2)
+row1.AddBlock(Block3)
+
+row1.OutputInventory()
