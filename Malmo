@@ -1,0 +1,25 @@
+class Block:
+    counter = 0
+    def __init__(self, name, texture, canBreak):
+        self.name  = name
+        self.texture = texture
+        self.varInteract = canBreak
+        self.id = Block.counter
+        Block.counter += 1
+        
+        
+        
+        print (f"A new block is made: {self.id} , {self.name}")
+
+    def __str__ (self):
+        return f"{self.id} {self.name} {self.texture} {self.varInteract}"
+   
+   
+
+Block1 = Block("Block of Iron", "Iron.png", True)
+Block2 = Block("Block of Aluminium", "Aluminium.png", True)
+Block3 = Block("Block of Tungsten", "Tungsten.png", True)
+
+print (Block1)
+print (Block2)
+print (Block3)
