@@ -1,0 +1,48 @@
+class Darbinieks:
+    def __init__(self,name, surname, salary, ID, increase):
+        self.name = name
+        self.surname = surname
+        self.salary = salary
+        self.ID = ID
+        self.increase = increase
+        
+    def getName(self) -> str:
+        return self.name
+    
+    def getSurname(self) -> str:
+        return self.surname
+    
+    def getSalary(self) -> str:
+        return self.salary
+    
+    def getID(self) -> float:
+        return self.ID
+    
+    def getIncrease(self) -> str:
+        return self.Increase
+    
+    def greet(self):
+       print (f"Hello, I am {self.name} {self.surname}")
+       print (f"My salary is {self.salary}")
+       print(f"My ID number is {self.ID}")
+
+    def __str__(self):
+        return f"{self.name} {self.surname} {self.salary} {self.ID}"
+        
+    def increase (self, procenti):
+        self.salary += self.salary / 100 * self.increase
+    def decrease (self, procenti):
+        self.salary -= self.salary / self.decrease
+
+person1 = Darbinieks("Andrejs", "Smirnovs", 57000, 185, 15)
+person2 = Darbinieks("Yekaterina", "Naumova", 72000, 81, 11)
+person3 = Darbinieks("Davids", "Keiss", 15, 69000, 29)
+
+person1.increase(15)
+person1.decrease(12)
+
+personlist = [person1, person2, person3]
+
+print (personlist[0])
+print (personlist[1])
+print (personlist[2])
