@@ -1,0 +1,31 @@
+class Worker:
+    worker_count = 0
+
+    def __init__(self, name, surname, salary):
+        self.name = name
+        self.surname = surname
+        self.salary = salary
+        Worker.worker_count += 1
+        self.ID = Worker.worker_count
+
+    def increase_salary(self, percent):
+        self.salary += self.salary * (percent / 100)
+
+    def decrease_salary(self, percent):
+        self.salary -= self.salary * (percent / 100)
+
+    def __str__(self):
+        return f"{self.ID}-{self.name}-{self.surname}"
+
+if __name__ == "__main__":
+    worker1 = Worker("Davids", "Keiss", 11000)
+    worker2 = Worker("Dmitrijs", "Solovjovs", 69420)
+
+    print(worker1)
+    print(worker2)
+
+    worker1.increase_salary(10)
+    worker2.decrease_salary(5)
+
+    print(f"Davids new salary: {worker1.salary}")
+    print(f"dmitrijs new salary: {worker2.salary}")
